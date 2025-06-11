@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  color: #2e3e34;
+}
+
+.hero {
+  display: flex;
+  background: linear-gradient(135deg, #5db377 0%, #74b993 100%);
+  padding: 0 40px 40px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  width: 480px;
+  height: auto;
+  border-bottom-left-radius: 180px;
+}
+
+.hero-text {
+  margin-left: 40px;
+  align-self: center;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.hero-text p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.stand-for {
+  background: white;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.stand-for h2 {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.values {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.value {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.icon {
+  background: #aacbb0;
+  color: black;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.value h3 {
+  text-transform: lowercase;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.value p {
+  font-size: 0.85rem;
+  color: #444;
+}

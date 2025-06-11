@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduverse - Make Quality Education Possible</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#" class="logo">🎓Eduverse</a>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+
+      <li class="dropdown">
+        <a href="#">Programs</a>
+        <ul class="dropdown-content">
+          <li><a href="sdgs.html">SDGs Explain</a></li>
+          <li><a href="impact.html">Impact</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="resource.html">Resource</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="interactive-dot dot-1"></div>
+        <div class="interactive-dot dot-2"></div>
+        <div class="interactive-dot dot-3"></div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Make Quality <span class="highlight">Education</span> Possible for Every Child</h1>
+                <p>Together, we can build a future where every child has inclusive, equal, and quality education opportunities that transform lives and communities.</p>
+                <a href="about.html" class="cta-button" onclick="animateButton(this)">Learn More</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=400&fit=crop" alt="Students in classroom" onmouseover="addHoverEffect(this)" onmouseout="removeHoverEffect(this)">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-container">
+            <div class="features-grid">
+                <div class="feature-item" onclick="expandFeature(this)">
+                    <div class="feature-image">
+                        <img src="img/edu matter.jpg" alt="Students learning">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Why Education Matter?</h3>
+                        <p>Education reduces inequality, costs of poverty, and drives sustainable development across communities worldwide.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item" onclick="expandFeature(this)">
+                    <div class="feature-image">
+                        <img src="img/impact.jpg" alt="children studying">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Quality Education Impact</h3>
+                        <p>Quality education fosters critical thinking, innovation, and problem-solving skills essential for future success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Education Section -->
+    <section class="why-education">
+        <div class="why-container">
+            <h2 class="section-title">Why Education Matter?</h2>
+            <div class="why-grid">
+                <div class="why-content">
+                    <h3>Education reduces inequality</h3>
+                    <p>Education reduces inequality, costs of poverty, and drives sustainable development across all communities worldwide.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item" onclick="animateCounter(this)">
+                            <div class="stat-number" data-target="244">0</div>
+                            <div class="stat-label">Million children out of school</div>
+                        </div>
+                        <div class="stat-item" onclick="animateCounter(this)">
+                            <div class="stat-number" data-target="771">0</div>
+                            <div class="stat-label">Million adults lack literacy</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-image">
+                    <img src="img/why.jpg" alt="african children happy to reach education">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Global Updates Section -->
+    <section class="global-updates">
+        <div class="updates-container">
+            <h2 class="section-title">Global Education Updates</h2>
+            <div class="updates-grid">
+                <div class="main-update" onclick="expandUpdate(this)">
+                    <img src="img/remain.jpg" alt="Education inequality">
+                    <div class="update-overlay">
+                        <h3>Education Inequality Remains a Major Challenge in Developing Countries</h3>
+                        <p>Latest research shows persistent gaps in educational access and quality worldwide.</p>
+                    </div>
+                </div>
+                
+                <div class="side-updates">
+                    <div class="update-card" onclick="highlightCard(this)">
+                        <img src="img/digital trans.jpg" alt="Digital transformation">
+                        <div>
+                            <h4>Digital Transformation Drives Educational Innovation</h4>
+                            <p>New technologies are reshaping how students learn and teachers instruct globally.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="update-card" onclick="highlightCard(this)">
+                        <img src="img/pisa.jpg" alt="PISA results">
+                        <div>
+                            <h4>PISA 2025 to Include Student Well-being for the First Time</h4>
+                            <p>The international assessment will measure both academic performance and student wellness.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="update-card" onclick="highlightCard(this)">
+                        <img src="img/teacher.jpg" alt="Teacher shortage">
+                        <div>
+                            <h4>Teacher Shortage Hits Developed Nations Too</h4>
+                            <p>Global teacher shortage affects education quality across both developing and developed countries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Eduverse</h3>
+                <p>Advancing quality education through innovative resources and collaborative learning for sustainable development.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About SDG 4</a></li>
+                    <li><a href="#">Resource Library</a></li>
+                    <li><a href="#">Research Hub</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Social Media</a></li>
+                    <li><a href="#">Partner Network</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Eduverse. All rights reserved. • Advancing SDG 4: Quality Education</p>
+        </div>
+    </footer>
+<script src="js/lanpag.js"></script>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Eduverse SDG4</title>
+    <link rel="stylesheet" href="css/resource.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#" class="logo">🎓Eduverse</a>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+
+      <li class="dropdown">
+        <a href="#">Programs</a>
+        <ul class="dropdown-content">
+          <li><a href="sdgs.html">SDGs Explain</a></li>
+          <li><a href="impact.html">Impact</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="resource.html">Resource</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Quality Education Resources</h1>
+            <p>Discover comprehensive materials, tools, and insights to advance SDG 4: Ensuring inclusive and equitable quality education for all</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="filter-tabs">
+            <div class="filter-tab active" onclick="filterResources('all')">All Resources</div>
+            <div class="filter-tab" onclick="filterResources('research')">Research Papers</div>
+            <div class="filter-tab" onclick="filterResources('tools')">Educational Tools</div>
+            <div class="filter-tab" onclick="filterResources('guides')">Implementation Guides</div>
+            <div class="filter-tab" onclick="filterResources('case-studies')">Case Studies</div>
+            <div class="filter-tab" onclick="filterResources('videos')">Video Content</div>
+        </div>
+    </section>
+
+    <!-- Resources Grid -->
+    <section class="resources-container">
+        <div class="resources-grid" id="resourcesGrid">
+            <!-- Research Paper Card -->
+            <div class="resource-card" data-category="research">
+                <div class="resource-header">
+                    <div class="resource-icon" style="background: linear-gradient(135deg, #68a085, #7fb896);">📊</div>
+                    <div>
+                        <div class="resource-title">Global Education Monitoring Report 2024</div>
+                        <div class="resource-meta">UNESCO • Research Paper</div>
+                    </div>
+                </div>
+                <p class="resource-description">
+                    Comprehensive analysis of global progress towards achieving SDG 4, including latest statistics on education access, quality, and equity worldwide.
+                </p>
+                <div class="resource-tags">
+                    <span class="tag">Global Data</span>
+                    <span class="tag">Policy Analysis</span>
+                    <span class="tag">Progress Tracking</span>
+                </div>
+                <div class="resource-actions">
+                    <button class="action-btn btn-primary">Download PDF</button>
+                    <button class="action-btn btn-secondary">Preview</button>
+                </div>
+            </div>
+
+            <!-- Educational Tool Card -->
+            <div class="resource-card" data-category="tools">
+                <div class="resource-header">
+                    <div class="resource-icon" style="background: linear-gradient(135deg, #f093fb, #f5576c);">🛠️</div>
+                    <div>
+                        <div class="resource-title">Digital Learning Platform Toolkit</div>
+                        <div class="resource-meta">EdTech Initiative • Educational Tool</div>
+                    </div>
+                </div>
+                <p class="resource-description">
+                    Ready-to-use digital platform with interactive modules, assessment tools, and progress tracking for quality education delivery.
+                </p>
+                <div class="resource-tags">
+                    <span class="tag">Digital Learning</span>
+                    <span class="tag">Interactive</span>
+                    <span class="tag">Assessment</span>
+                </div>
+                <div class="resource-actions">
+                    <button class="action-btn btn-primary">Access Tool</button>
+                    <button class="action-btn btn-secondary">Demo</button>
+                </div>
+            </div>
+
+            <!-- Implementation Guide Card -->
+            <div class="resource-card" data-category="guides">
+                <div class="resource-header">
+                    <div class="resource-icon" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">📋</div>
+                    <div>
+                        <div class="resource-title">SDG 4 Implementation Framework</div>
+                        <div class="resource-meta">Education Alliance • Implementation Guide</div>
+                    </div>
+                </div>
+                <p class="resource-description">
+                    Step-by-step guide for policymakers and educators to implement quality education initiatives aligned with SDG 4 targets.
+                </p>
+                <div class="resource-tags">
+                    <span class="tag">Policy Framework</span>
+                    <span class="tag">Implementation</span>
+                    <span class="tag">Best Practices</span>
+                </div>
+                <div class="resource-actions">
+                    <button class="action-btn btn-primary">Read Guide</button>
+                    <button class="action-btn btn-secondary">Bookmark</button>
+                </div>
+            </div>
+
+            <!-- Case Study Card -->
+            <div class="resource-card" data-category="case-studies">
+                <div class="resource-header">
+                    <div class="resource-icon" style="background: linear-gradient(135deg, #fa709a, #fee140);">📈</div>
+                    <div>
+                        <div class="resource-title">Finland's Education Success Story</div>
+                        <div class="resource-meta">Nordic Education Institute • Case Study</div>
+                    </div>
+                </div>
+                <p class="resource-description">
+                    In-depth analysis of Finland's education system transformation and its alignment with SDG 4 principles of equity and quality.
+                </p>
+                <div class="resource-tags">
+                    <span class="tag">Success Story</span>
+                    <span class="tag">System Reform</span>
+                    <span class="tag">Equity</span>
+                </div>
+                <div class="resource-actions">
+                    <button class="action-btn btn-primary">Read Study</button>
+                    <button class="action-btn btn-secondary">Share</button>
+                </div>
+            </div>
+
+            <!-- Video Content Card -->
+            <div class="resource-card" data-category="videos">
+                <div class="resource-header">
+                    <div class="resource-icon" style="background: linear-gradient(135deg, #a8edea, #fed6e3);">🎥</div>
+                    <div>
+                        <div class="resource-title">Quality Education Masterclass Series</div>
+                        <div class="resource-meta">EduVerse Academy • Video Series</div>
+                    </div>
+                </div>
+                <p class="resource-description">
+                    Comprehensive video series featuring experts discussing innovative approaches to achieve quality education for all learners.
+                </p>
+                <div class="resource-tags">
+                    <span class="tag">Expert Insights</span>
+                    <span class="tag">Innovation</span>
+                    <span class="tag">Masterclass</span>
+                </div>
+                <div class="resource-actions">
+                    <button class="action-btn btn-primary">Watch Now</button>
+                    <button class="action-btn btn-secondary">Playlist</button>
+                </div>
+            </div>
+
+            <!-- Additional Research Card -->
+            <div class="resource-card" data-category="research">
+                <div class="resource-header">
+                    <div class="resource-icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">🔬</div>
+                    <div>
+                        <div class="resource-title">AI in Education: Future Perspectives</div>
+                        <div class="resource-meta">Tech Education Lab • Research</div>
+                    </div>
+                </div>
+                <p class="resource-description">
+                    Exploring the role of artificial intelligence in advancing quality education and its potential impact on SDG 4 achievement.
+                </p>
+                <div class="resource-tags">
+                    <span class="tag">AI Technology</span>
+                    <span class="tag">Future Trends</span>
+                    <span class="tag">Innovation</span>
+                </div>
+                <div class="resource-actions">
+                    <button class="action-btn btn-primary">Download</button>
+                    <button class="action-btn btn-secondary">Cite</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Stay Updated</h2>
+            <p>Get the latest resources, research, and insights on quality education delivered to your inbox</p>
+            <div class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Enter your email">
+                <button class="newsletter-btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Eduverse</h3>
+                <p>Advancing quality education through innovative resources and collaborative learning for sustainable development.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About SDG 4</a></li>
+                    <li><a href="#">Resource Library</a></li>
+                    <li><a href="#">Research Hub</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Social Media</a></li>
+                    <li><a href="#">Partner Network</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Eduverse. All rights reserved. • Advancing SDG 4: Quality Education</p>
+        </div>
+    </footer>
+</body>
+</html>
